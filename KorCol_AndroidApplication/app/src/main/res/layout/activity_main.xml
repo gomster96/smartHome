@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <TextView
+        android:id="@+id/button_click_text_view"
+        android:layout_width="409dp"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:textAlignment="center"
+        android:text=" Byungwoong An\n\n Santiago Isaha Jaramizo"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.211"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/secondLL"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="40sp"
+        app:layout_constraintTop_toBottomOf="@id/firstLL"
+        android:weightSum="2"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:onClick="buttonLED3Click"
+            android:text="LED3 On"
+            android:textColor="#FF0000FF"
+            android:textSize="16sp"
+            android:id="@+id/buttonLED3"
+
+        />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:onClick="buttonLED4Click"
+            android:text="LED4 On"
+            android:textColor="#FFFF00FF"
+            android:textSize="16sp"
+            android:id="@+id/buttonLED4"
+            />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/firstLL"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="40sp"
+        app:layout_constraintTop_toBottomOf="@id/button_click_text_view"
+        android:weightSum="2"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:onClick="buttonLED1Click"
+                android:text="LED1 On"
+                android:textColor="#FF0000FF"
+                android:textSize="16sp"
+                android:id="@+id/buttonLED1"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:onClick="buttonLED2Click"
+                android:text="LED2 On"
+                android:textColor="#FFFF00FF"
+                android:textSize="16sp"
+                android:id="@+id/buttonLED2"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/thirdLL"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="40sp"
+        app:layout_constraintTop_toBottomOf="@id/secondLL"
+
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:onClick="buttonMotor1Click"
+            android:text="Motor1 On"
+            android:textColor="#FF0000FF"
+            android:textSize="16sp"
+            android:id="@+id/Motor1"
+            />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:onClick="buttonMotor2Click"
+            android:text="Motor2 On"
+            android:textColor="#FFFF00FF"
+            android:textSize="16sp"
+            android:id="@+id/Motor2"
+            />
+    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fourthLL"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="40sp"
+        app:layout_constraintTop_toBottomOf="@id/thirdLL"
+
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:onClick="buttonMotor3Click"
+                android:text="Motor3 On"
+                android:textColor="#FF0000FF"
+                android:textSize="16sp"
+                android:id="@+id/Motor3"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30sp"
+                android:onClick="buttonHumClick"
+                android:text="Humidity On"
+                android:textColor="#FFFF00FF"
+                android:textSize="16sp"
+                android:id="@+id/Hum"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
